@@ -1,14 +1,5 @@
-/*
-
-Template 2099 Scenic
-
-http://www.tooplate.com/view/2099-scenic
-
-*/
-
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700');
-
 body {
   background: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -20,9 +11,6 @@ html, body {
   height: 100%;
 }
 
-/*---------------------------------------
-  TYPOGRAPHY              
------------------------------------------*/
 
 h1,h2,h3,h4,h5,h6 {
   font-weight: 300;
@@ -60,10 +48,6 @@ p {
   letter-spacing: 0.5px;
 }
 
-
-/*---------------------------------------
-  BUTTONS               
------------------------------------------*/
 
 .section-btn {
   margin: 32px 0 0 0;
@@ -195,7 +179,7 @@ a:hover, a:active, a:focus {
 
 #about, #project,
 #team, #contact, footer {
-  background: #ffffff;
+  background: #fefefe;
 }
 
 #about,
@@ -205,10 +189,6 @@ a:hover, a:active, a:focus {
   text-align: center;
 }
 
-
-/*---------------------------------------
-  PRE LOADER              
------------------------------------------*/
 
 .preloader {
   position: fixed;
@@ -253,11 +233,6 @@ a:hover, a:active, a:focus {
 @keyframes spinner {
   to {transform: rotate(360deg);}
 }
-
-
-/*---------------------------------------
-  MENU             
------------------------------------------*/
 
 .custom-navbar {
   margin-bottom: 0;
@@ -336,11 +311,6 @@ a:hover, a:active, a:focus {
   }
 }
 
-
-/*---------------------------------------
-  HOME             
------------------------------------------*/
-
 #home {
   display: -webkit-box;
   display: -webkit-flex;
@@ -390,11 +360,6 @@ a:hover, a:active, a:focus {
   transition: 1s opacity;
 }
 
-
-/*---------------------------------------
-  ABOUT              
------------------------------------------*/
-
 #about {
   padding-top: 200px;
   padding-bottom: 150px;
@@ -407,10 +372,19 @@ a:hover, a:active, a:focus {
   margin: 0;
 }
 
+#project .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-/*---------------------------------------
-  PROJECT              
------------------------------------------*/
+#project .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 .project-item {
   overflow: hidden;
@@ -419,7 +393,18 @@ a:hover, a:active, a:focus {
   padding: 0;
   vertical-align: middle;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 .project-overlay {
   background: rgba(0,0,0,0.5);
@@ -463,18 +448,29 @@ a:hover, a:active, a:focus {
 }
 
 
-/*---------------------------------------
-   TEAM             
------------------------------------------*/
-
 #team .item {
   display: block;
   width: 100%;
   margin-bottom: 22px;
 }
+#team .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#team .col-md-5, #team .col-md-4 {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #team h3,
-#team p {
+#team li {
+  text-align: justify;
+  color: #4a065f;
   margin: 0;
 }
 
